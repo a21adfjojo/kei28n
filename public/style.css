@@ -1,0 +1,143 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #f0f8ff;
+  color: #222;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #0077cc;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.thread-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+.thread-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 5px #aaa;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.thread-card:hover {
+  box-shadow: 0 0 12px #0077cc;
+}
+
+.thread-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #004a75;
+  word-break: break-word;
+}
+
+.thread-info {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+#posts {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px #ccc;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post-header {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #0077cc;
+}
+
+.post-date {
+  font-weight: normal;
+  color: #999;
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+
+.post-content {
+  margin-top: 4px;
+  white-space: pre-wrap;
+}
+
+.post img {
+  max-width: 100%;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+#back-btn {
+  background-color: transparent;
+  color: #0077cc;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+#back-btn:hover {
+  text-decoration: underline;
+}

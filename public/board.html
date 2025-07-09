@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>スレッド詳細</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="thread-title">スレッド</h1>
+      <button id="back-btn">＜ スレッド一覧へ戻る</button>
+    </header>
+    <main>
+      <form id="post-form">
+        <input
+          type="text"
+          id="name"
+          placeholder="名前（省略可）"
+          maxlength="20"
+        />
+        <input type="file" id="image" accept="image/*" />
+        <textarea
+          id="content"
+          placeholder="内容"
+          required
+          maxlength="500"
+        ></textarea>
+        <button type="submit">投稿</button>
+      </form>
+      <div id="posts"></div>
+    </main>
+    <script src="board.js"></script>
+  </body>
+</html>
