@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>匿名掲示板 - スレッド一覧</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>匿名掲示板</h1>
-      <button id="new-thread-btn">＋ 新しいスレッド作成</button>
-    </header>
-    <main>
-      <div id="threads" class="thread-grid"></div>
-    </main>
-    <script src="index.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>匿名掲示板</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>匿名掲示板</h1>
+<button id="new-thread-btn">＋ 新しいスレッド作成</button>
+</header>
+<main>
+<select id="board-select">
+  <option value="総合">総合</option>
+  <option value="ゲーム">ゲーム</option>
+  <option value="政治">政治</option>
+  <option value="ニュース">ニュース</option>
+  <option value="趣味">趣味</option>
+  <option value="アニメ">アニメ</option>
+  <option value="音楽">音楽</option>
+  <option value="スポーツ">スポーツ</option>
+  <option value="技術">技術</option>
+  <option value="生活">生活</option>
+</select>
+<div id="threads" class="thread-grid"></div>
+</main>
+<script src="index.js"></script>
+</body>
 </html>
