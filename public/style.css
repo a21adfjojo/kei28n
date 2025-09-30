@@ -1,3 +1,4 @@
+/* 基本スタイル */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 800px;
@@ -23,16 +24,18 @@ button {
   background-color: #0077cc;
   color: white;
   border: none;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  margin-right: 5px;
 }
 
 button:hover {
   background-color: #005fa3;
 }
 
+/* スレッド一覧 */
 .thread-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -65,6 +68,7 @@ button:hover {
   color: #555;
 }
 
+/* フォーム */
 main form {
   display: flex;
   flex-direction: column;
@@ -73,7 +77,8 @@ main form {
 }
 
 input[type="text"],
-textarea {
+textarea,
+select {
   padding: 8px;
   font-size: 1rem;
   border-radius: 6px;
@@ -85,6 +90,7 @@ textarea {
   min-height: 80px;
 }
 
+/* 投稿表示 */
 #posts {
   background: white;
   border-radius: 10px;
@@ -128,6 +134,19 @@ textarea {
   border-radius: 8px;
 }
 
+.post button {
+  background-color: #ffa500;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 8px;
+  margin-top: 6px;
+}
+
+.post button:hover {
+  background-color: #e59400;
+}
+
+/* 戻るボタン */
 #back-btn {
   background-color: transparent;
   color: #0077cc;
@@ -140,4 +159,13 @@ textarea {
 
 #back-btn:hover {
   text-decoration: underline;
+}
+
+/* スレッドフォーム・板選択 */
+#board-select {
+  margin-bottom: 15px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
